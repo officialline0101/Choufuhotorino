@@ -780,7 +780,7 @@ if (isWeekday && slotEnd >= middayStart && slotStart < middayEnd) {
 // 平日19:00、土曜14:30以降を営業時間外とする条件
 const isSaturday = slotStart.getDay() === 6;
 const eveningLimitWeekday = new Date(day);  // 新しいDateオブジェクトを使用
-eveningLimitWeekday.setHours(19, 0);
+eveningLimitWeekday.setHours(21, 0);
 const eveningLimitSaturday = new Date(day);  // 新しいDateオブジェクトを使用
 eveningLimitSaturday.setHours(14, 30);
 

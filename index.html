@@ -782,7 +782,7 @@ const isSaturday = slotStart.getDay() === 6;
 const eveningLimitWeekday = new Date(day);  // 新しいDateオブジェクトを使用
 eveningLimitWeekday.setHours(21, 0);
 const eveningLimitSaturday = new Date(day);  // 新しいDateオブジェクトを使用
-eveningLimitSaturday.setHours(14, 30);
+eveningLimitSaturday.setHours(14, 0);
 
 if ((isSaturday && slotEnd > eveningLimitSaturday) || (!isSaturday && slotEnd > eveningLimitWeekday)) {
     cell.textContent = '✕';

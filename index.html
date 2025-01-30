@@ -764,7 +764,7 @@
 // 月曜日～金曜日12:31～14:59を営業時間外とする条件
 const isWeekday = slotStart.getDay() >= 1 && slotStart.getDay() <= 5;
 const middayStart = new Date(day);  // 新しいDateオブジェクトを使用
-middayStart.setHours(12, 31);
+middayStart.setHours(13, 00);
 const middayEnd = new Date(day);  // 新しいDateオブジェクトを使用
 middayEnd.setHours(14, 59);
 
